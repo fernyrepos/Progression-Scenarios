@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>    
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ScenarioDef[defName="VFEE_NewFamily"]/label</xpath>
+                    <value>
+                        <label>Ambushed Manor</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ScenarioDef[defName="VFEE_NewFamily"]/scenario/summary</xpath>
+                    <value>
+                        <summary>An imperial family in dire need of help. A very challenging Empire start.</summary>
+                    </value>
+                </Operation>
+</Patch>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>    
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ScenarioDef[defName="VFED_NewSafehaven"]/scenario/summary</xpath>
+                    <value>
+                        <summary>A desertion party on high alert. Lay low while the Empire attempts to extinguish your cell.</summary>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ScenarioDef[defName="VFED_NewSafehaven"]/label</xpath>
+                    <value>
+                        <label>Desertion Cell</label>
+                    </value>
+                </Operation>
+</Patch>

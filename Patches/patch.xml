@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>    
+<!-- RENAMES -->      
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ScenarioDef[defName="LostTribe"]/label</xpath>
+                    <value>
+                        <label>Developed Tribe</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ScenarioDef[defName="LostTribe"]/scenario/summary</xpath>
+                    <value>
+                        <summary>A group of five lost Neolithic tribespeople attempt to rebuild. Difficult.</summary>
+                    </value>
+                </Operation>
+
+
+
+
+</Patch>

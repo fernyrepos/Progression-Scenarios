@@ -1,0 +1,22 @@
+<loadFolders>
+  <v1.5>
+    <li>/</li>
+    <li>1.5</li>
+    <li IfModActive="oskarpotocki.vfe.empire">Mods and Shit/VFE Empire</li>
+    <li IfModActive="oskarpotocki.vfe.insectoid2">Mods and Shit/VFE Insectoids 2</li>
+    <li IfModActive="oskarpotocki.vfe.pirates">Mods and Shit/VFE Pirates</li>
+    <li IfModActive="oskarpotocki.vanillafactionsexpanded.settlersmodule">Mods and Shit/VFE Settlers</li>
+    <li IfModActive="vanillaracesexpanded.android">Mods and Shit/VRE Androids</li>
+    <li IfModActive="vanillaracesexpanded.insector">Mods and Shit/VRE Insectors</li>
+    <li IfModActive="vanillaexpanded.vfea">Mods and Shit/VFE Ancients</li>
+    <li IfModActive="oskarpotocki.vfe.deserters">Mods and Shit/VFE Deserters</li>
+    <li IfModActive="kentington.saveourship2">Mods and Shit/SOS2</li>
+    <li IfModActive="oskarpotocki.vfe.tribals">Mods and Shit/VFE Tribals</li>
+    <li IfModActive="phaserrave.deathpallcalypse">Mods and Shit/Deathpallcalypse</li>
+    <li IfModActive="dankpyon.medieval.overhaul">Mods and Shit/Medieval Overhaul</li>
+    <li IfModActive="oskarpotocki.vfe.classical">Mods and Shit/VFE Classical</li>
+    <li IfModActive="oskarpotocki.vfe.mechanoid">Mods and Shit/VFE Mechanoids</li>
+    <li IfModActive="OskarPotocki.VFE.Medieval2">Mods and Shit/VFE Medieval 2</li>
+    <li IfModActive="vanillaexpanded.vfeart">Mods and Shit/VFE Art</li>
+  </v1.5>
+</loadFolders>

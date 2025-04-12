@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+  <name>Progression: Scenarios</name>
+  <author>ferny</author>
+  <packageId>ferny.ProgressionScenarios</packageId>
+  <description>Fully integrates scenarios into the game.</description>
+  <supportedVersions>
+    <li>1.5</li>
+  </supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>brrainz.harmony</li>
+		<li>oskarpotocki.vfe.empire</li>
+		<li>oskarpotocki.vfe.insectoid2</li>
+		<li>oskarpotocki.vfe.pirates</li>
+		<li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
+		<li>vanillaracesexpanded.android</li>
+		<li>vanillaracesexpanded.insector</li>
+		<li>vanillaexpanded.vfea</li>
+		<li>oskarpotocki.vfe.tribals</li>
+		<li>oskarpotocki.vfe.deserters</li>
+		<li>kentington.saveourship2</li>
+		<li>phaserrave.deathpallcalypse</li>
+		<li>dankpyon.medieval.overhaul</li>
+		<li>oskarpotocki.vfe.classical</li>
+		<li>oskarpotocki.vfe.mechanoid</li>
+		<li>kentington.saveourship2</li>
+		<li>OskarPotocki.VFE.Medieval2</li>
+		<li>vanillaexpanded.vfeart</li>
+	</loadAfter>
+</ModMetaData>
