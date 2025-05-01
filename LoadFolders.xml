@@ -18,5 +18,35 @@
     <li IfModActive="oskarpotocki.vfe.mechanoid">Mods and Shit/VFE Mechanoids</li>
     <li IfModActive="OskarPotocki.VFE.Medieval2">Mods and Shit/VFE Medieval 2</li>
     <li IfModActive="vanillaexpanded.vfeart">Mods and Shit/VFE Art</li>
+    <li IfModActive="mersid.wce2updated.core">Mods and Shit/Warcrimes Expanded 2</li>
+    <li IfModActive="krkr.rule56">Mods and Shit/CAI</li>
+    <li IfModActive="vanillaexpanded.vcooke">Mods and Shit/VE Cooking</li>
+    <li IfModActive="van.dacrypts">Mods and Shit/DA Crypts</li>
+    <li IfModActive="dubwise.dubsbadhygiene">Mods and Shit/Dubs Hygiene</li>
+    <li IfModActive="ferny.progressionwarrants">Mods and Shit/Progression Warrants</li>
+    <li IfModActive="vanillaexpanded.vfecore">Mods and Shit/VE Furniture</li>
+    <li IfModActive="reel.expanded.storage">Mods and Shit/Reel's Storage</li>
+    <li IfModActive="vanillaexpanded.vfefarming">Mods and Shit/VFE Farming</li>
+    <li IfModActive="vanillaexpanded.vwe">Mods and Shit/VE Weapons</li>
+    <li IfModActive="det.sbdelights">Mods and Shit/Stoneborn Delights</li>
+    <li IfModActive="vanillaexpanded.vcookestews">Mods and Shit/VCE Stews</li>
+    <li IfModActive="sarg.alphacrafts">Mods and Shit/Alpha Crafts</li>
+    <li IfModActive="rooboid.satyrfaun.expanded">Mods and Shit/Roo SF Expanded</li>
+    <li IfModActive="xrushha.animagear">Mods and Shit/Anima Gear</li>
+    <li IfModActive="xrushha.eldersfaction">Mods and Shit/Elders Faction</li>
+    <li IfModActive="vanillaexpanded.vbrewecandt">Mods and Shit/VBE CAT</li>
+    <li IfModActive="vanillaexpanded.vplantsemore">Mods and Shit/VPE More Plants</li>
+    <li IfModActive="ratys.rtfuse">Mods and Shit/RT Fuse</li>
+    <li IfModActive="vanillaexpanded.vcookesushi">Mods and Shit/VCE Sushi</li>
+    <li IfModActive="captaintesss.mwb">Mods and Shit/Simply Wheel Barrow</li>
+    <li IfModActive="vanillaexpanded.vbrewe">Mods and Shit/VE Brewing</li>
+    <li IfModActive="vanillaexpanded.temperature">Mods and Shit/VE Temperature</li>
+    <li IfModActive="vanillaexpanded.vappe">Mods and Shit/VE Apparel</li>
+    <li IfModActive="rooboid.paintings.ex">Mods and Shit/Roo Painting</li>
+    <li IfModActive="vanillaexpanded.varme">Mods and Shit/VE Armor</li>
+    <li IfModActive="vanillaexpanded.vwems">Mods and Shit/VWE Makeshift</li>
+    <li IfModActive="vanillaexpanded.vweft">Mods and Shit/VWE Frontier</li>
+    <li IfModActive="ferny.progressionrobotics">Mods and Shit/Progression Robotics</li>
+    <li IfModActive="vanillaexpanded.vfepower">Mods and Shit/VFE Power</li>
   </v1.5>
 </loadFolders>

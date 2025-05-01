@@ -1,47 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>    
 
-<!-- Industrial -->
-
-
-                <Operation Class="PatchOperationConditional">
-                <success>Always</success>
-                    <xpath>/Defs/ResearchProjectDef[defName="VFEM2_MedievalArchitecture"]/tags</xpath>
-                    <match Class="PatchOperationSequence">
-                        <operations>
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ResearchProjectDef[defName="VFEM2_MedievalArchitecture"]/tags</xpath>
-                                <value>
-                                    <li>ClassicStart</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                    <nomatch Class="PatchOperationSequence">
-                        <operations>
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ResearchProjectDef[defName="VFEM2_MedievalArchitecture"]</xpath>
-                                <value>
-                                <tags>
-                                    <li>ClassicStart</li>
-                                </tags>
-                                </value>
-                            </li>
-                        </operations>
-                    </nomatch>
-                </Operation>
-
-
 <!-- Spacer -->
 
 
                 <Operation Class="PatchOperationConditional">
                 <success>Always</success>
-                    <xpath>/Defs/ResearchProjectDef[defName="VFEM2_Alchemy"]/tags</xpath>
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_HazardProtection"]/tags</xpath>
                     <match Class="PatchOperationSequence">
                         <operations>
                             <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ResearchProjectDef[defName="VFEM2_Alchemy"]/tags</xpath>
+                                <xpath>/Defs/ResearchProjectDef[defName="VAE_HazardProtection"]/tags</xpath>
                                 <value>
                                     <li>FernySpacerStart</li>
                                 </value>
@@ -51,7 +20,7 @@
                     <nomatch Class="PatchOperationSequence">
                         <operations>
                             <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ResearchProjectDef[defName="VFEM2_Alchemy"]</xpath>
+                                <xpath>/Defs/ResearchProjectDef[defName="VAE_HazardProtection"]</xpath>
                                 <value>
                                 <tags>
                                     <li>FernySpacerStart</li>
@@ -65,11 +34,11 @@
 
                 <Operation Class="PatchOperationConditional">
                 <success>Always</success>
-                    <xpath>/Defs/ResearchProjectDef[defName="VFEM2_ComplexWorkshops"]/tags</xpath>
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_MlitaryCamouflage"]/tags</xpath>
                     <match Class="PatchOperationSequence">
                         <operations>
                             <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ResearchProjectDef[defName="VFEM2_ComplexWorkshops"]/tags</xpath>
+                                <xpath>/Defs/ResearchProjectDef[defName="VAE_MlitaryCamouflage"]/tags</xpath>
                                 <value>
                                     <li>FernySpacerStart</li>
                                 </value>
@@ -79,7 +48,7 @@
                     <nomatch Class="PatchOperationSequence">
                         <operations>
                             <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ResearchProjectDef[defName="VFEM2_ComplexWorkshops"]</xpath>
+                                <xpath>/Defs/ResearchProjectDef[defName="VAE_MlitaryCamouflage"]</xpath>
                                 <value>
                                 <tags>
                                     <li>FernySpacerStart</li>
@@ -91,14 +60,13 @@
                 </Operation>
 
 
-
                 <Operation Class="PatchOperationConditional">
                 <success>Always</success>
-                    <xpath>/Defs/ResearchProjectDef[defName="VFEM2_Wine"]/tags</xpath>
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_LeatherTanning"]/tags</xpath>
                     <match Class="PatchOperationSequence">
                         <operations>
                             <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ResearchProjectDef[defName="VFEM2_Wine"]/tags</xpath>
+                                <xpath>/Defs/ResearchProjectDef[defName="VAE_LeatherTanning"]/tags</xpath>
                                 <value>
                                     <li>FernySpacerStart</li>
                                 </value>
@@ -108,7 +76,7 @@
                     <nomatch Class="PatchOperationSequence">
                         <operations>
                             <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ResearchProjectDef[defName="VFEM2_Wine"]</xpath>
+                                <xpath>/Defs/ResearchProjectDef[defName="VAE_LeatherTanning"]</xpath>
                                 <value>
                                 <tags>
                                     <li>FernySpacerStart</li>
