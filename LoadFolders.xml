@@ -2,6 +2,7 @@
   <v1.5>
     <li>/</li>
     <li>1.5</li>
+    <li IfModActive="Ludeon.RimWorld.Royalty">Mods and Shit/Royalty</li>
     <li IfModActive="oskarpotocki.vfe.empire">Mods and Shit/VFE Empire</li>
     <li IfModActive="oskarpotocki.vfe.insectoid2">Mods and Shit/VFE Insectoids 2</li>
     <li IfModActive="oskarpotocki.vfe.pirates">Mods and Shit/VFE Pirates</li>

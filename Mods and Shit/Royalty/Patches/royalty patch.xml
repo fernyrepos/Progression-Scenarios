@@ -26,4 +26,23 @@
                         </operations>
                     </nomatch>
                 </Operation>
+
+
+
+                <Operation Class="PatchOperationAdd">
+                <success>Always</success>
+                    <xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+                    <value>
+                        <li>Ferny_Spacers</li>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                <success>Always</success>
+                    <xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+                    <value>
+                        <li>Ferny_Ultras</li>
+                    </value>
+                </Operation>
+
+
 </Patch>
