@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Patch>    
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ScenarioDef[defName="VFES_Bandits"]/label</xpath>
-                    <value>
-                        <label>Desperate Bandits</label>
-                    </value>
-                </Operation>
-</Patch>

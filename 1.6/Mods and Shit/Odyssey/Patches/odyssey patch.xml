@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>    
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ScenarioDef[defName="TheGravship"]/label</xpath>
+        <value>
+            <label>Orbital Chase</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ScenarioDef[defName="TheGravship"]/scenario/summary</xpath>
+        <value>
+            <summary>A crew of three piloting an orbital Gravship, locked in an eternal race against time.</summary>
+        </value>
+    </Operation>
+</Patch>
