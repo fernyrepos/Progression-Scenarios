@@ -57,7 +57,6 @@
     <li IfModActive="oskarpotocki.vfe.empire">1.6/Mods and Shit/VFE Empire</li>
     <li IfModActive="oskarpotocki.vfe.insectoid2">1.6/Mods and Shit/VFE Insectoids 2</li>
     <li IfModActive="oskarpotocki.vfe.pirates">1.6/Mods and Shit/VFE Pirates</li>
-    <li IfModActive="oskarpotocki.vanillafactionsexpanded.settlersmodule">1.6/Mods and Shit/VFE Settlers</li>
     <li IfModActive="vanillaracesexpanded.android">1.6/Mods and Shit/VRE Androids</li>
     <li IfModActive="vanillaracesexpanded.insector">1.6/Mods and Shit/VRE Insectors</li>
     <li IfModActive="vanillaexpanded.vfea">1.6/Mods and Shit/VFE Ancients</li>
@@ -101,5 +100,7 @@
     <li IfModActive="ferny.progressionrobotics">1.6/Mods and Shit/Progression Robotics</li>
     <li IfModActive="vanillaexpanded.vfepower">1.6/Mods and Shit/VFE Power</li>
     <li IfModActive="Ludeon.Rimworld.Odyssey">1.6/Mods and Shit/Odyssey</li>
+    <li IfModActive="vanillaexpanded.vee">1.6/Mods and Shit/VE Events</li>
+    <li IfModActive="oskarpotocki.vanillafactionsexpanded.settlersmodule">1.6/Mods and Shit/VFE Settlers</li>
   </v1.6>
 </loadFolders>

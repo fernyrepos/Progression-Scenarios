@@ -2,100 +2,12 @@
 <Defs>
 
 
-<!-- New player factions for scenarios -->
-  <FactionDef ParentName="PlayerFactionBase">
-    <defName>Ferny_Spacers</defName>
-    <label>Advanced Arrivals</label>
-    <description>A colony of recently-arrived spacer off-worlders.</description>
-    <isPlayer>true</isPlayer>
-    <basicMemberKind>Colonist</basicMemberKind>
-    <pawnSingular>colonist</pawnSingular>
-    <pawnsPlural>colonists</pawnsPlural>
-    <techLevel>Spacer</techLevel>
-    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
-    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-    <allowedCultures>
-      <li>Astropolitan</li>
-    </allowedCultures>
-    <backstoryFilters>
-      <li>
-        <categories>
-          <li>Offworld</li>
-        </categories>
-      </li>
-    </backstoryFilters>
-   
-    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
-    <startingResearchTags>
-      <li>ClassicStart</li>
-      <li>FernySpacerStart</li>
-    </startingResearchTags>
-    <startingTechprintsResearchTags>
-      <li>ClassicStart</li>
-      <li>ClassicStartTechprints</li>
-    </startingTechprintsResearchTags>
-    <apparelStuffFilter>
-      <thingDefs>
-        <li>Synthread</li>
-      </thingDefs>
-    </apparelStuffFilter>
-  </FactionDef>
-
-
-  <FactionDef ParentName="PlayerFactionBase">
-    <defName>Ferny_Ultras</defName>
-    <label>Ultra Arrivals</label>
-    <description>A colony of recently-arrived ultratech off-worlders.</description>
-    <isPlayer>true</isPlayer>
-    <basicMemberKind>Colonist</basicMemberKind>
-    <pawnSingular>colonist</pawnSingular>
-    <pawnsPlural>colonists</pawnsPlural>
-    <techLevel>Ultra</techLevel>
-    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
-    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-    <allowedCultures>
-      <li>Astropolitan</li>
-    </allowedCultures>
-    <backstoryFilters>
-      <li>
-        <categories>
-          <li>Offworld</li>
-        </categories>
-      </li>
-    </backstoryFilters>
-   
-    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
-    <startingResearchTags>
-      <li>ClassicStart</li>
-      <li>FernySpacerStart</li>
-    </startingResearchTags>
-    <startingTechprintsResearchTags>
-      <li>ClassicStart</li>
-      <li>ClassicStartTechprints</li>
-    </startingTechprintsResearchTags>
-    <apparelStuffFilter>
-      <thingDefs>
-        <li>Synthread</li>
-      </thingDefs>
-    </apparelStuffFilter>
-  </FactionDef>
-
-
-
-
-
-
-
-
-  <ScenarioDef ParentName="ScenarioBase">
-    <defName>SpacerCrashlanded</defName>
-    <label>Advanced Crashlanded</label>
-    <description>The three of you awake in your cryptosleep sarcophagi to the sound of sirens and ripping metal. Last thing you remember was your ship transmitting information into your skull about your homeworld's knowledge. You barely get to the escape pods before the ship is torn apart. Some time later, you land on this unknown rimworld. Will you rebuild in the fleeting image of your homeworld?</description>
+  <ScenarioDef Name="Crashlanded" ParentName="ScenarioBase">
+    <defName>IndustrialMeteorShower</defName>
+    <label>Meteor Showers</label>
+    <description>A nearby moon is breaking apart, hurling chunks of rock onto the planet's surface. As you look into the sky, you stow your existensial dread and come to terms with your new reality. The clock is ticking.</description>
     <scenario>
-      <playerFaction>
-        <factionDef>Ferny_Spacers</factionDef>
-      </playerFaction>
-      <summary>Three crashlanded survivors with Spacer homeworld knowledge. Skip ahead!</summary>
+      <summary>Three colonists bombared with constant meteor showers, some containing valuable resources.</summary>
       <parts>
         
         <!-- Config pages -->
@@ -108,7 +20,7 @@
         <!-- Player starting stuff spawn method-->
         <li Class="ScenPart_PlayerPawnsArriveMethod">
           <def>PlayerPawnsArriveMethod</def>
-          <method>DropPods</method>
+          <method>Standing</method>
           <visible>false</visible>
         </li>
 
@@ -212,18 +124,30 @@
           <textKey>GameStartDialog</textKey>
           <closeSound>GameStartSting</closeSound>
         </li>
-        
-      </parts>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>VEE_MeteoriteShower</incident>
+          <intervalDays>14.6618042</intervalDays>
+          <minDays>0.200000003</minDays>
+          <maxDays>1</maxDays>
+          <repeat>True</repeat>
+        </li>        
+        </parts>
     </scenario>
   </ScenarioDef>
 
 
+
+
+
+
+
   <ScenarioDef ParentName="ScenarioBase">
-    <defName>FernyLoneTribesman</defName>
-    <label>Lost Tribesman</label>
-    <description>You were asked by your tribe to gather food for a caravan journey. As you wandered further and further off, you turned around to realize you no longer recognized your surroundings. You called out to your tribe, only to be met with echoes. Reality sinks in. You're on your own now.</description>
+    <defName>TribalMeteorShower</defName>
+    <label>Meteor Showers</label>
+    <description>A nearby moon is breaking apart, hurling chunks of rock onto the planet's surface. As you look into the sky, you stow your existensial dread and come to terms with your new reality. The clock is ticking.</description>
     <scenario>
-      <summary>A tribal man loses his group, and ends up alone and afraid.</summary>
+      <summary>Three tribespeople bombared with constant meteor showers, some containing valuable resources.</summary>
       <playerFaction>
         <factionDef>PlayerTribe</factionDef>
       </playerFaction>
@@ -232,7 +156,7 @@
         <!-- Config pages -->
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
           <def>ConfigPage_ConfigureStartingPawns</def>
-          <pawnCount>1</pawnCount>
+          <pawnCount>5</pawnCount>
           <pawnChoiceCount>8</pawnChoiceCount>
         </li>
 
@@ -264,17 +188,27 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Silver</thingDef>
-          <count>100</count>
+          <count>200</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Pemmican</thingDef>
-          <count>200</count>
+          <count>400</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>MedicineHerbal</thingDef>
           <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Club</thingDef>
+          <stuff>WoodLog</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Ikwa</thingDef>
+          <stuff>Steel</stuff>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
@@ -284,13 +218,26 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Bow_Short</thingDef>
-          <count>1</count>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pila</thingDef>
+        </li>
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <count>3</count>
+          <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+        </li>
+
+        <!-- Scatter some things near player start -->
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>500</count>
         </li>
 
       </parts>
     </scenario>
   </ScenarioDef>
-
-
-
 </Defs>
