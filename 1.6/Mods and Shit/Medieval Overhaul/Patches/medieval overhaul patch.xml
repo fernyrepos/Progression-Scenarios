@@ -136,7 +136,6 @@
                     </nomatch>
                 </Operation>
 
-
                 <Operation Class="PatchOperationConditional">
                 <success>Always</success>
                     <xpath>/Defs/ResearchProjectDef[defName="DankPyon_MilitaryPolearms"]/tags</xpath>
@@ -712,7 +711,32 @@
                     </nomatch>
                 </Operation>
 
-
+                <Operation Class="PatchOperationConditional">
+                <success>Always</success>
+                    <xpath>/Defs/ResearchProjectDef[defName="DankPyon_TextileSpinning"]/tags</xpath>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ResearchProjectDef[defName="DankPyon_TextileSpinning"]/tags</xpath>
+                                <value>
+                                    <li>ClassicStart</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ResearchProjectDef[defName="DankPyon_TextileSpinning"]</xpath>
+                                <value>
+                                <tags>
+                                    <li>ClassicStart</li>
+                                </tags>
+                                </value>
+                            </li>
+                        </operations>
+                    </nomatch>
+                </Operation>
 
 
 
