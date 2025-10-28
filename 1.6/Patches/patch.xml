@@ -28,7 +28,18 @@
                     </value>
                 </Operation>
 
-<!-- INDUSTRIAL -->
+<!-- REPLACING RESEARCH PROJECTS > INDUSTRIAL STARTS WITH SPACER STARTS -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="NutrientPaste"]/tags</xpath>
+                        <value>
+                            <tags>
+                                <li>FernySpacerStart</li>
+                            </tags>
+                        </value>
+                </Operation>
+
+
+<!-- ADDING RESEARCH TO INDUSTRIAL STARTS-->
 
                 <Operation Class="PatchOperationConditional">
                 <success>Always</success>
