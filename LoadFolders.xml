@@ -102,5 +102,6 @@
     <li IfModActive="Ludeon.Rimworld.Odyssey">1.6/Mods and Shit/Odyssey</li>
     <li IfModActive="vanillaexpanded.vee">1.6/Mods and Shit/VE Events</li>
     <li IfModActive="oskarpotocki.vanillafactionsexpanded.settlersmodule">1.6/Mods and Shit/VFE Settlers</li>
+    <li IfModActive="vanillaquestsexpanded.ancients">1.6/Mods and Shit/VQE Ancients</li>
   </v1.6>
 </loadFolders>
