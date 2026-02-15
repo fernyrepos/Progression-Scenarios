@@ -47,6 +47,9 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
+
+
+
 				<li Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/ScenarioDef[defName="GravshipEarth"]/scenario/parts</xpath>
@@ -69,7 +72,36 @@
                         </li>
                     </value>
 				</li>
+
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Gravship Expanded - Chapter 1</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ScenarioDef[defName="GravshipEarth"]/scenario/parts</xpath>
+                                <value>
+                                    <li Class="ProgressionAgriculture.ScenPart_StartingSeeds">
+                                        <def>Ferny_StartingSeeds</def>
+                                        <thingDef>VGE_OxyalgaePlant_SeedBundle</thingDef>
+                                    </li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+
 			</operations>
 		</match>
 	</Operation>
+
+
+
+
+
+
 </Patch>
