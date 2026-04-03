@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>Derelict Casino</defName>
+    <label>Derelict Casino</label>
+	<scenario>
+		<summary>A hungover casino owner wakes up in his forgotten dusty paradise.</summary>
+		<description>There was a time where your casino was bustling, people betting large quantities of silver over petty games. At some point the guests stopped coming. The machines started malfunctioning, and cobwebs forming on the bar counter. Each day became a struggle just to keep the lights on, and a struggle to keep your relationship with alcohol in check. Last night, your loneliness got the best of you. You chugged the last bit of alcohol you had in your storeroom, just to feel something again.
+
+You wake up outside in the old parking lot with a bruise on your head, and a pulsating headache. Perhaps last night was the wakeup call you needed.</description>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>PlayerColony</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnChoiceCount>8</pawnChoiceCount>
+				<pawnCount>1</pawnCount>
+			</li>
+			<li Class="ScenPart_ForcedHediff">
+				<def>ForcedHediff</def>
+				<chance>1</chance>
+				<context>PlayerStarter</context>
+				<hideOffMap>True</hideOffMap>
+				<hediff>Hangover</hediff>
+				<severityRange>1~1</severityRange>
+			</li>
+			<li Class="ScenPart_ForcedHediff">
+				<def>ForcedHediff</def>
+				<chance>1</chance>
+				<context>PlayerStarter</context>
+				<hediff>AlcoholAddiction</hediff>
+				<severityRange>0.281481475~0.681481481</severityRange>
+			</li>
+			<li Class="ScenPart_ForcedHediff">
+				<def>ForcedHediff</def>
+				<chance>1</chance>
+				<context>PlayerStarter</context>
+				<hediff>AlcoholTolerance</hediff>
+				<severityRange>0.144444451~0.374074072</severityRange>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Silver</thingDef>
+				<count>800</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>20</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineIndustrial</thingDef>
+				<count>15</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ComponentIndustrial</thingDef>
+				<count>10</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Gun_Revolver</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MeleeWeapon_Knife</thingDef>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li Class="ScenPart_StartingAnimal">
+				<def>StartingAnimal</def>
+				<count>1</count>
+				<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+			</li>
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>There was a time where your casino was bustling, people betting large quantities of silver over petty games. At some point the guests stopped coming. The machines started malfunctioning, and cobwebs forming on the bar counter. Each day became a struggle just to keep the lights on, and a struggle to keep your relationship with alcohol in check. Last night, your loneliness got the best of you. You chugged the last bit of alcohol you had in your storeroom, just to feel something again.
+
+You wake up outside in the old parking lot with a bruise on your head, and a pulsating headache. Perhaps last night was the wakeup call you needed.</text>
+				<textKey>GameStartDialog</textKey>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+			<li Class="KCSG.ScenPart_AddStartingStructure">
+				<def>VFEC_AddStartingStructure</def>
+				<spawnConduits>True</spawnConduits>
+				<preGenClear>True</preGenClear>
+          			<spawnTheStartingPawn>true</spawnTheStartingPawn>
+				<structureLabel>a derelict casino</structureLabel>
+				<nearMapCenter>True</nearMapCenter>
+				<chooseFrom>
+					<li>Ferny_DerelictCasino</li>
+				</chooseFrom>
+			</li>
+		</parts>
+	</scenario>
+
+  </ScenarioDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<KCSG.StructureLayoutDef>
+  <defName>Ferny_DerelictCasino</defName>
+  <isStorage>true</isStorage>
+  <spawnConduits>false</spawnConduits>
+  <layouts>
+    <li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Filth_RubbleRock,.,Filth_RubbleRock,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,AncientATM,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,AncientLamppost</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,RB_GlassWall_Steel,RB_GlassWall_Steel,RB_GlassWall_Steel,Wall_WoodLog,Wall_WoodLog,OrnateDoor_WoodLog_North,.,Wall_WoodLog,Wall_WoodLog,RB_GlassWall_Steel,RB_GlassWall_Steel,RB_GlassWall_Steel,Wall_WoodLog,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,VFEPD_PalletCardboard,.,.,.,.,.,Wall_WoodLog,.,.,.,Wall_WoodLog,.,Wall_WoodLog,Wall_WoodLog,.,Filth_BloodSmear,Filth_BloodSmear,Filth_BloodSmear,.,.,.,.,.,.,.,.,.,.,.,Wall_WoodLog,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,RB_GlassWall_Steel,.,.,.,.,.,Wall_WoodLog,.,Filth_BloodSmear,Table1x2c_WoodLog_North,Stool_WoodLog_North,Filth_BloodSmear,.,HC_SlotMachineBlue_West,.,.,.,.,.,.,.,.,.,.,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,RB_GlassWall_Steel,.,.,.,.,.,Wall_WoodLog,Brewery_West,Filth_BloodSmear,.,Stool_WoodLog_North,Filth_BloodSmear,Filth_BloodSmear,.,.,.,.,.,.,.,.,.,.,.,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,RB_GlassWall_Steel,.,.,.,.,.,Wall_WoodLog,.,.,.,.,Filth_Blood,Filth_Blood,.,.,HC_SlotMachineBlue_South,HC_SlotMachineBlue_South,.,Stool_WoodLog_North,Stool_WoodLog_North,.,.,.,Filth_RubbleBuilding,PowerConduit,Wall_BlocksSandstone,Wall_BlocksSandstone,Wall_BlocksSandstone,Wall_BlocksSandstone,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,Wall_WoodLog,.,ElectricStove_North,WallLamp_WoodLog_North,AncientKitchenSink,.,PowerConduit,.,DiningChair_WoodLog_South,HC_SlotMachineRed_South,DiningChair_WoodLog_South,WallLamp_WoodLog_North,DiningChair_WoodLog_South,.,.,.,.,Stool_WoodLog_North,PokerTable_WoodLog,.,Stool_WoodLog_North,Silver,.,WallLamp_WoodLog_East,PowerConduit,Shelf_WoodLog_North,.,Shelf_WoodLog_North,.,Wall_BlocksSandstone,.,.,AncientRustedCarFrame_West,.,.,.,.,.,.,.,.,.,AncientLamppost</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,PowerConduit,PowerConduit,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,.,.,.,.,.,.,.,Filth_BloodSmear,Loudspeaker_North,.,Loudspeaker_North,PowerConduit,.,.,Filth_Blood,.,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,VFEPD_BinBag,VFEPD_BinBag,PowerConduit,HC_SlotMachineGreen_North,ComponentIndustrial,Steel,HC_SlotMachineGreen_North,.,.,Stool_WoodLog_North,Stool_WoodLog_North,.,.,Stool_WoodLog_North,Filth_BloodSmear,.,.,.,.,PowerConduit,.,Filth_Blood,Filth_Blood,Filth_Blood,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodFiredGenerator_Fuel88,.,PowerConduit,.,.,.,.,.,.,PokerTable_WoodLog,.,.,Stool_WoodLog_North,PokerTable_WoodLog,.,.,.,.,WallLamp_WoodLog_East,PowerConduit,.,Shelf_WoodLog_South,.,Shelf_WoodLog_South,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,ComponentIndustrial,.,.,.,Filth_BloodSmear,.,.,.,.,Stool_WoodLog_North,.,.,Stool_WoodLog_North,.,.,Filth_RubbleBuilding,PowerConduit,Wall_BlocksSandstone,Wall_BlocksSandstone,Wall_BlocksSandstone,Wall_BlocksSandstone,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodFiredGenerator_Fuel88,.,Wall_BlocksGranite,Steel,HC_SlotMachineRed_South,HC_SlotMachineRed_South,HC_SlotMachineRed_South,.,Filth_BloodSmear,.,Stool_WoodLog_North,.,Filth_BloodSmear,Filth_BloodSmear,.,.,.,.,.,Wall_WoodLog,VFEPD_PalletBoxes,.,.,.,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,VFEPD_ContainerGreen_North,.,.,.,.,.,Wall_BlocksGranite,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,.,.,.,.,.,Filth_BloodSmear,.,.,.,.,.,.,Wall_WoodLog,.,.,.,DiningChair_WoodLog_South,Wall_WoodLog,.,.,.,.,.,.,.,.,.,AncientRustedCar_East,.,.,AncientLamppost</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodFiredGenerator_Fuel88,.,PowerConduit,Table1x2c_WoodLog_North,DiningChair_WoodLog_West,.,.,.,.,.,.,.,Filth_BloodSmear,.,BilliardsTable_WoodLog_East,.,.,.,.,PowerConduit,.,.,.,.,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,ChunkSlate,PowerConduit,ChunkSlate,ChunkSlate,.,.,.,WallLamp_WoodLog_North,AncientLockers_South,AncientLockers_South,AncientLockers_South,WallLamp_WoodLog_North,.,.,.,.,.,.,Wall_WoodLog,.,DiningChair_WoodLog_West,.,.,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,PowerConduit,PowerConduit,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Door_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,PowerConduit,Wall_WoodLog,PowerConduit,PowerConduit,PowerConduit,Door_WoodLog,PowerConduit,PowerConduit,Shelf_WoodLog_East,.,.,Shelf_WoodLog_South,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,Wall_WoodLog,.,.,.,.,.,Wall_BlocksSandstone,.,.,.,PowerConduit,.,.,WoodLog,.,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,Filth_RubbleRock,.,.,.,Filth_RubbleRock,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,Wall_WoodLog,Armchair_Cloth_East,.,.,Filth_Blood,.,Wall_BlocksSandstone,Silver,.,Silver,PowerConduit,.,.,DiningChair_WoodLog_East,.,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,AncientChemfuelCanister,AncientChemfuelCanister,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,PlantPot_WoodLog,Wall_WoodLog,Door_WoodLog,Wall_WoodLog,Door_WoodLog,Wall_WoodLog,AncientKitchenSink,Wall_WoodLog,.,.,.,.,.,Wall_BlocksSandstone,.,Meat_Hare,.,PowerConduit,Battery_South_Power6,.,.,AncientToilet_West,Wall_WoodLog,.,.,.,.,.,.,.,.,AncientChemfuelCanister,.,.,.,AncientLamppost</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,Wall_WoodLog,Wall_WoodLog,AncientToilet_South,Wall_WoodLog,AncientToilet_South,Wall_WoodLog,WallLamp_WoodLog_North,Wall_WoodLog,.,Dresser_WoodLog_South,WallLamp_WoodLog_North,DoubleBed_WoodLog_South,EndTable_WoodLog_South,Wall_BlocksSandstone,Silver,.,Meat_Hare,PowerConduit,.,Shelf_WoodLog_South,AncientLockers_South,Wall_WoodLog,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,Filth_RubbleRock,.,.,Filth_RubbleBuilding,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,PowerConduit,PowerConduit,PowerConduit,PowerConduit,PowerConduit,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite</li>
+    </li>
+    <li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Door_WoodLog,.,WallLamp_WoodLog_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.,LightBall,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,PowerConduit,PowerConduit,PowerConduit,PowerConduit,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,.,HC_SlotMachineGreen_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Door_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Door_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,.,DiningChair_WoodLog_West,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,PowerConduit,PowerConduit,PowerConduit,.,PowerConduit,PowerConduit,PowerConduit,PowerConduit,PowerConduit,Wall_WoodLog,PowerConduit,Door_WoodLog,Wall_BlocksSandstone,Wall_BlocksSandstone,PowerConduit,Wall_BlocksSandstone,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,PowerConduit,PowerConduit,PowerConduit,PowerConduit,PowerConduit,PowerConduit,PowerConduit,PowerConduit,PowerConduit,PowerConduit,PowerConduit,PowerConduit,Wall_BlocksSandstone,Wall_BlocksSandstone,Wall_BlocksSandstone,Wall_BlocksSandstone,Wall_BlocksSandstone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    </li>
+  </layouts>
+  <roofGrid>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+  </roofGrid>
+  <terrainGrid>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,TileSandstone,TileSandstone,FlagstoneSandstone,FlagstoneSandstone,TileSandstone,FlagstoneSandstone,FlagstoneSandstone,TileSandstone,TileSandstone,FlagstoneSandstone,FlagstoneSandstone,TileSandstone,TileSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Concrete,.,.,.,.,.,.,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.,.,.,.,.,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,WoodPlankFloor,WoodPlankFloor,.,.,.,.,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,WoodPlankFloor,.,.,.,.,.,TileSandstone,FlagstoneSandstone,TileSandstone,TileSandstone,TileSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,TileSandstone,FlagstoneSandstone,TileSandstone,TileSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,WoodPlankFloor,.,.,.,.,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,WoodPlankFloor,.,.,.,.,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,FineTileSandstone,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,WoodPlankFloor,.,.,.,.,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,WoodPlankFloor,.,.,WoodPlankFloor,.,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,WoodPlankFloor,.,WoodPlankFloor,WoodPlankFloor,.,.,TileSandstone,TileSandstone,TileSandstone,FlagstoneSandstone,TileSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,TileSandstone,FlagstoneSandstone,TileSandstone,TileSandstone,TileSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,WoodPlankFloor,.,.,.,.,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,CarpetRed,CarpetRed,CarpetRed,CarpetRed,CarpetRed,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,CarpetRed,CarpetRed,WoodPlankFloor,.,TileSandstone,TileSandstone,TileSandstone,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,CarpetRed,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,CarpetRed,CarpetRed,WoodPlankFloor,.,TileSandstone,TileSandstone,TileSandstone,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,WoodPlankFloor,.,TileSandstone,TileSandstone,TileSandstone,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,WoodPlankFloor,WoodPlankFloor,.,TileSandstone,TileSandstone,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,.,TileSandstone,TileSandstone,.,TileSandstone,TileSandstone,FlagstoneSandstone,TileSandstone,TileSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,TileSandstone,TileSandstone,FlagstoneSandstone,TileSandstone,TileSandstone</li>
+    <li>.,PackedDirt,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.,.,WoodPlankFloor,WoodPlankFloor,.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.,WoodPlankFloor,.,.,.,.,.,TileSandstone,TileSandstone,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.,.,WoodPlankFloor,WoodPlankFloor,.,.,.,.,WoodPlankFloor,.,.,.,.,WoodPlankFloor,WoodPlankFloor,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,PackedDirt,PackedDirt,PackedDirt,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.,.,WoodPlankFloor,.,.,.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.,.,.,.,WoodPlankFloor,WoodPlankFloor,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,PackedDirt,PackedDirt,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.,.,WoodPlankFloor,.,WoodPlankFloor,.,.,.,.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.,.,.,.,WoodPlankFloor,WoodPlankFloor,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,PackedDirt,.,.,.,.,.,.,.,.,.,.,.,.,.,.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,FlagstoneSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,FlagstoneSandstone,FlagstoneSandstone,FlagstoneSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone,TileSandstone</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+  </terrainGrid>
+  <forceGenerateRoof>true</forceGenerateRoof>
+  <needRoofClearance>true</needRoofClearance>
+  <randomizeWallStuffAtGen>false</randomizeWallStuffAtGen>
+  <modRequirements>
+    <li>rebuild.cotr.doorsandcorners</li>
+    <li>vanillaexpanded.vfepropsanddecor</li>
+    <li>adamas.hospitalitycasino</li>
+    <li>ludeon.rimworld.ideology</li>
+    <li>ludeon.rimworld.odyssey</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+<KCSG.SymbolDef>
+  <defName>Battery_Power1</defName>
+  <thing>Battery</thing>
+  <rotation>South</rotation>
+  <powerPercent>0.0168000739</powerPercent>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>WoodFiredGenerator_Fuel90</defName>
+  <thing>WoodFiredGenerator</thing>
+  <fuelPercent>0.9010205</fuelPercent>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_GlassWall_Steel</defName>
+  <thing>RB_GlassWall</thing>
+  <stuff>Steel</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>HC_SlotMachineBlue</defName>
+  <thing>HC_SlotMachineBlue</thing>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>HC_SlotMachineRed</defName>
+  <thing>HC_SlotMachineRed</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>HC_SlotMachineGreen</defName>
+  <thing>HC_SlotMachineGreen</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>WoodFiredGenerator_Fuel89</defName>
+  <thing>WoodFiredGenerator</thing>
+  <fuelPercent>0.8965137</fuelPercent>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Battery_Power6</defName>
+  <thing>Battery</thing>
+  <rotation>South</rotation>
+  <powerPercent>0.06889452</powerPercent>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>WoodFiredGenerator_Fuel88</defName>
+  <thing>WoodFiredGenerator</thing>
+  <fuelPercent>0.8851416</fuelPercent>
+</KCSG.SymbolDef>
+
+
+
+</Defs>

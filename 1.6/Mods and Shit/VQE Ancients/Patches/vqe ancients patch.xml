@@ -19,9 +19,7 @@
   <ScenarioDef ParentName="ScenarioBase">
     <defName>Ferny_TribalVault</defName>
     <label>Locked Out</label>
-    <description>With each passing day you stare at your fellow companions hibernating in cryptosleep sarcophagi. One day, when your life is nearing its end, you will wake your successor, and his watch will begin. Every day for the last hundreds of years your outpost was awaiting orders from High Command which may no longer exist. Will today be the day you not only wake up, but also open your eyes?
-	
-Note: Since you start alone with random superpowers and weaknesses, this is a difficult scenario.</description>
+    <description>Your tribe awakes to a pounding headache, as if a distant satellite had directed waves at you in your rest. You glance at what you once though to be a distant mountain, though now you can almost see through it. A mysterious room, hidden in a near impenetrable chamber. It calls us with pounding waves throughout our bodies. Will it let us ascend into this planet faster than we could have imagined, or remind us of our fragile and immature state?</description>
     <scenario>
       <summary>A small group of wild men locked outside of an ancient vault. Very challenging.</summary>
       <playerFaction>
@@ -31,7 +29,7 @@ Note: Since you start alone with random superpowers and weaknesses, this is a di
       <parts>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
-          <text>With each passing day you stare at your fellow companions hibernating in cryptosleep sarcophagi. One day, when your life is nearing its end, you will wake your successor, and his watch will begin. Every day for the last hundreds of years your outpost was awaiting orders from High Command which may no longer exist. Will today be the day you not only wake up, but also open your eyes?</text>
+          <text>Your tribe awakes to a pounding headache, as if a distant satellite had directed waves at you in your rest. You glance at what you once though to be a distant mountain, though now you can almost see through it. A mysterious room, hidden in a near impenetrable chamber. It calls us with pounding waves throughout our bodies. Will it let us ascend into this planet faster than we could have imagined, or remind us of our fragile and immature state?</text>
           <closeSound>GameStartSting</closeSound>
         </li>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">

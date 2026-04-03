@@ -6,7 +6,12 @@
                         <label>Desperate Bandits</label>
                     </value>
                 </Operation>
-
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ScenarioDef[defName="VFES_Bandits"]/scenario/name</xpath>
+                    <value>
+                        <name>Desperate Bandits</name>
+                    </value>
+                </Operation>
 
 
 	<Operation Class="PatchOperationFindMod">
