@@ -69,7 +69,7 @@ namespace ProgressionScenarios
 
 		private void DrawTechLevelBox(Rect boxRect, TechLevel techLevel)
 		{
-			Widgets.DrawBox(boxRect);
+			Widgets.DrawBox(boxRect, 1, BaseContent.GreyTex);
 			var iconRect = boxRect.ContractedBy(25);
 			iconRect.y -= 15;
 			if (Widgets.ButtonImageFitted(iconRect, ContentFinder<Texture2D>.Get("UI/Icons/" + techLevel.ToString())))
