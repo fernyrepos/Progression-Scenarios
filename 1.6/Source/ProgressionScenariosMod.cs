@@ -1,7 +1,5 @@
-﻿using System.Numerics;
 using HarmonyLib;
 using Verse;
-using Verse.Sound;
 
 namespace ProgressionScenarios
 {
