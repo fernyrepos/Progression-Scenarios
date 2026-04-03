@@ -1,6 +1,8 @@
 using System.Collections.Generic;
-using RimWorld;
+using System.Linq;
 using HarmonyLib;
+using RimWorld;
+
 namespace ProgressionScenarios
 {
 	[HarmonyPatch(typeof(ScenarioLister), "ScenariosInCategory")]
@@ -9,13 +11,18 @@ namespace ProgressionScenarios
 		public static TechLevel selectedLevel;
 		public static IEnumerable<Scenario> Postfix(IEnumerable<Scenario> result)
 		{
+			var filtered = new List<Scenario>();
 			foreach (var scenario in result)
 			{
-				if (selectedLevel == scenario.playerFaction.factionDef.techLevel)
+				if (selectedLevel == scenario.playerFaction?.factionDef?.techLevel)
 				{
-					yield return scenario;
+					filtered.Add(scenario);
 				}
 			}
+			return filtered.OrderBy(s => {
+				var def = s.GetDef();
+				return def?.GetModExtension<ScenarioExtension>()?.displayOrder ?? 0f;
+			});
 		}
 	}
 }

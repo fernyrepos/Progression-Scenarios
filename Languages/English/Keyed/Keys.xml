@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<PS_ChooseTechLevel>Choose your starting technology</PS_ChooseTechLevel>
+	<PS_NoScenariosForTechLevel>No scenarios available for selected tech-level.</PS_NoScenariosForTechLevel>
+	<PS_Ultratech>Ultratech</PS_Ultratech>
+	<PS_TechLevelDesc_Animal>Campfires, sticks, and stones. Difficult.</PS_TechLevelDesc_Animal>
+	<PS_TechLevelDesc_Neolithic>Tribes, republics, and civilization. Basics.</PS_TechLevelDesc_Neolithic>
+	<PS_TechLevelDesc_Medieval>Castles, knights, and crossbows. Bloody.</PS_TechLevelDesc_Medieval>
+	<PS_TechLevelDesc_Industrial>Firearms, electricity, and industry. Classic.</PS_TechLevelDesc_Industrial>
+	<PS_TechLevelDesc_Spacer>Gravships, mechs, and space. Advanced.</PS_TechLevelDesc_Spacer>
+	<PS_TechLevelDesc_Ultra>Megacorps and androids. Posthuman.</PS_TechLevelDesc_Ultra>
+	<PS_TechLevelDesc_Archotech>Superintelligence, divine technologies. Unknown.</PS_TechLevelDesc_Archotech>
+</LanguageData>
