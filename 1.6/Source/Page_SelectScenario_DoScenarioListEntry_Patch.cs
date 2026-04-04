@@ -12,11 +12,11 @@ namespace ProgressionScenarios
 		{
 			var icon = scen.GetIcon();
 			if (icon == null) return;
-			rect.x -= 8;
+			rect.x -= 4;
 			var iconRect = new Rect(rect.x, rect.y + (rect.height - 40f) / 2f, 40f, 40f);
 			GUI.DrawTexture(iconRect, icon);
 			rect.xMin += 48f;
-			rect.width += 8f;
+			rect.width += 4f;
 		}
 	}
 }
