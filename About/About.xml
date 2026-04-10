@@ -10,6 +10,11 @@
   </supportedVersions>
 	<modDependencies>
 		<li>
+			<packageId>oskarpotocki.vanillafactionsexpanded.core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
+		</li>
+		<li>
 			<packageId>brrainz.harmony</packageId>
 			<displayName>Harmony</displayName>
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
@@ -76,5 +81,7 @@
 		<li>ferny.progressionagriculture</li>
 		<li>vanillaquestsexpanded.ancients</li>
 		<li>vanillaexpanded.gravship</li>
+		<li>vanillaracesexpanded.saurid</li>
+		<li>sarg.alphagenes</li>
 	</loadAfter>
 </ModMetaData>

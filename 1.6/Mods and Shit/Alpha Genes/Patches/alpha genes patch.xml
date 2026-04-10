@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>    
+
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ScenarioDef[defName="AG_ForsakenCrashlanded"]</xpath>
+		<value>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/Forsaken</iconPath>
+			</li>
+		</value>
+	</Operation>
+
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ScenarioDef[defName="AG_ForsakenCrashlanded"]/label</xpath>
+                    <value>
+                        <label>Forsaken Ones</label>
+                    </value>
+                </Operation>
+                <!-- <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ScenarioDef[defName="AG_ForsakenCrashlanded"]/scenario/summary</xpath>
+                    <value>
+                        <summary>A new blossoming hideout for awakened androids, but can you sustain it?</summary>
+                    </value>
+                </Operation> -->
+</Patch>

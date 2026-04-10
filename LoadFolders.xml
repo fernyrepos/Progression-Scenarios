@@ -54,6 +54,8 @@
     <li>/</li>
     <li>1.6</li>
     <li IfModActive="Ludeon.RimWorld.Royalty">1.6/Mods and Shit/Royalty</li>
+    <li IfModActive="Ludeon.RimWorld.Biotech">1.6/Mods and Shit/Biotech</li>
+    <li IfModActive="Ludeon.RimWorld.Anomaly">1.6/Mods and Shit/Anomaly</li>
     <li IfModActive="oskarpotocki.vfe.empire">1.6/Mods and Shit/VFE Empire</li>
     <li IfModActive="oskarpotocki.vfe.insectoid2">1.6/Mods and Shit/VFE Insectoids 2</li>
     <li IfModActive="oskarpotocki.vfe.pirates">1.6/Mods and Shit/VFE Pirates</li>
@@ -103,5 +105,7 @@
     <li IfModActive="vanillaexpanded.vee">1.6/Mods and Shit/VE Events</li>
     <li IfModActive="oskarpotocki.vanillafactionsexpanded.settlersmodule">1.6/Mods and Shit/VFE Settlers</li>
     <li IfModActive="vanillaquestsexpanded.ancients">1.6/Mods and Shit/VQE Ancients</li>
+    <li IfModActive="vanillaracesexpanded.saurid">1.6/Mods and Shit/VRE Saurids</li>
+    <li IfModActive="sarg.alphagenes">1.6/Mods and Shit/Alpha Genes</li>
   </v1.6>
 </loadFolders>

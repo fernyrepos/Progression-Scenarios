@@ -3,6 +3,12 @@
 
   <ScenarioDef ParentName="ScenarioBase">
     <defName>GravshipEarth</defName>
+      <modExtensions>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/GravEngine</iconPath>
+        <displayOrder>9</displayOrder>
+			</li>
+    </modExtensions>
     <label>New Gravship</label>
     <description>You have just descended after your first successful Gravship launch. Everyone looks around excitedly, was the world truly at our disposal? As you land the ship, you realize the enormous power that rests in your hands. What are the consequences of this new technology?</description>
     <scenario>

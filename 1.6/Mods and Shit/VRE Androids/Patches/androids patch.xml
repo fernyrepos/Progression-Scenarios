@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>    
+
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ScenarioDef[defName="VREA_NewUtopia"]</xpath>
+		<value>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/Android</iconPath>
+			</li>
+		</value>
+	</Operation>
+
+
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ScenarioDef[defName="VREA_NewUtopia"]/label</xpath>
                     <value>

@@ -5,7 +5,7 @@
 		<xpath>/Defs/ScenarioDef[defName="NakedBrutality"]</xpath>
 		<value>
 			<li Class="ProgressionScenarios.ScenarioExtension">
-				<iconPath>UI/Icons/Neolithic</iconPath>
+				<iconPath>ScenarioIcons/LostTribesman</iconPath>
 				<displayOrder>10</displayOrder>
 			</li>
 		</value>
@@ -15,18 +15,39 @@
 		<xpath>/Defs/ScenarioDef[defName="LostTribe"]</xpath>
 		<value>
 			<li Class="ProgressionScenarios.ScenarioExtension">
-				<iconPath>UI/Icons/Medieval</iconPath>
+				<iconPath>ScenarioIcons/LostTribe</iconPath>
 				<displayOrder>20</displayOrder>
 			</li>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ScenarioDef[defName="FernyLoneTribesman"]</xpath>
+		<value>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/LostTribesman</iconPath>
+				<displayOrder>1</displayOrder>
+			</li>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>/Defs/ScenarioDef[defName="Crashlanded"]</xpath>
 		<value>
 			<li Class="ProgressionScenarios.ScenarioExtension">
-				<iconPath>UI/Icons/Industrial</iconPath>
-				<displayOrder>30</displayOrder>
+				<iconPath>ScenarioIcons/DropPod</iconPath>
+				<displayOrder>1</displayOrder>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ScenarioDef[defName="SpacerCrashlanded"]</xpath>
+		<value>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/DropPod</iconPath>
+				<displayOrder>1</displayOrder>
 			</li>
 		</value>
 	</Operation>
@@ -35,10 +56,21 @@
 		<xpath>/Defs/ScenarioDef[defName="TheRichExplorer"]</xpath>
 		<value>
 			<li Class="ProgressionScenarios.ScenarioExtension">
-				<iconPath>UI/Icons/Spacer</iconPath>
+				<iconPath>ScenarioIcons/RichExplorer</iconPath>
 				<displayOrder>40</displayOrder>
 			</li>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ScenarioDef[defName="DerelictCasino"]</xpath>
+		<value>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/Casino</iconPath>
+			</li>
+		</value>
+	</Operation>
+
+
 
 </Patch>

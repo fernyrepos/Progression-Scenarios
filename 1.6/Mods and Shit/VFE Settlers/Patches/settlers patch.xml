@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>    
+
+    <Operation Class="PatchOperationAddModExtension">
+      <xpath>/Defs/ScenarioDef[defName="Ferny_ChemshineDisaster"]</xpath>
+      <value>
+        <li Class="ProgressionScenarios.ScenarioExtension">
+          <iconPath>ScenarioIcons/Chemshine</iconPath>
+        </li>
+      </value>
+    </Operation>
+
+
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ScenarioDef[defName="VFES_Bandits"]/label</xpath>
                     <value>

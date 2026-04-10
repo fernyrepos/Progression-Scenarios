@@ -7,7 +7,7 @@
 
 
   <ScenarioDef ParentName="ScenarioBase">
-    <defName>Derelict Casino</defName>
+    <defName>DerelictCasino</defName>
     <label>Derelict Casino</label>
 	<scenario>
 		<summary>A hungover casino owner wakes up in his forgotten dusty paradise.</summary>

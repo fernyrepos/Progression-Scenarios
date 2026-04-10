@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>    
+
+
+
+
+
+
+    <Operation Class="PatchOperationAddModExtension">
+      <xpath>/Defs/ScenarioDef[defName="VFED_NewSafehaven"]</xpath>
+      <value>
+        <li Class="ProgressionScenarios.ScenarioExtension">
+          <iconPath>ScenarioIcons/Deserters</iconPath>
+        </li>
+      </value>
+    </Operation>
+
+
+
+
+
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ScenarioDef[defName="VFED_NewSafehaven"]/scenario/summary</xpath>
                     <value>

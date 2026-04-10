@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>    
 
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ScenarioDef[defName="VFEC_NewEmpire"]</xpath>
+		<value>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/Senators</iconPath>
+			</li>
+		</value>
+	</Operation>
+
+
+
+
 <!-- Scenario -->
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ScenarioDef[defName="VFEC_NewEmpire"]/scenario/summary</xpath>

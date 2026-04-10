@@ -5,6 +5,11 @@
   <ScenarioDef Name="Crashlanded" ParentName="ScenarioBase">
     <defName>IndustrialMeteorShower</defName>
     <label>Meteor Showers</label>
+    <modExtensions>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/Meteor</iconPath>
+			</li>
+    </modExtensions>
     <description>A nearby moon is breaking apart, hurling chunks of rock onto the planet's surface. As you look into the sky, you stow your existensial dread and come to terms with your new reality. The clock is ticking.</description>
     <scenario>
       <summary>Three colonists bombared with constant meteor showers, some containing valuable resources.</summary>
@@ -145,6 +150,11 @@
   <ScenarioDef ParentName="ScenarioBase">
     <defName>TribalMeteorShower</defName>
     <label>Meteor Showers</label>
+    <modExtensions>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/Meteor</iconPath>
+			</li>
+    </modExtensions>
     <description>A nearby moon is breaking apart, hurling chunks of rock onto the planet's surface. As you look into the sky, you stow your existensial dread and come to terms with your new reality. The clock is ticking.</description>
     <scenario>
       <summary>Three tribespeople bombared with constant meteor showers, some containing valuable resources.</summary>

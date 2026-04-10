@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>    
+
+
+    <Operation Class="PatchOperationAddModExtension">
+      <xpath>/Defs/ScenarioDef[defName="VFEI2_MercenarySquad"]</xpath>
+      <value>
+        <li Class="ProgressionScenarios.ScenarioExtension">
+          <iconPath>ScenarioIcons/Megahive</iconPath>
+        </li>
+      </value>
+    </Operation>
+
+
+
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ScenarioDef[defName="VFEI2_MercenarySquad"]/scenario/summary</xpath>
                     <value>

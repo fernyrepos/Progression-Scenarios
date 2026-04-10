@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>    
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ScenarioDef[defName="VFEE_NewFamily"]</xpath>
+		<value>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/Empire</iconPath>
+			</li>
+		</value>
+	</Operation>
+
 <!-- Now it's ultratech -->
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/FactionDef[defName="VFEE_NewFamily"]/techLevel</xpath>

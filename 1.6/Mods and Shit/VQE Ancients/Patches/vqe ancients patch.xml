@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>    
 
+
+    <Operation Class="PatchOperationAddModExtension">
+      <xpath>/Defs/ScenarioDef[defName="VQE_NewVault"]</xpath>
+      <value>
+        <li Class="ProgressionScenarios.ScenarioExtension">
+          <iconPath>ScenarioIcons/SealedVault</iconPath>
+        </li>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+      <xpath>/Defs/ScenarioDef[defName="VQEA_CargoCult"]</xpath>
+      <value>
+        <li Class="ProgressionScenarios.ScenarioExtension">
+          <iconPath>ScenarioIcons/CargoCult</iconPath>
+        </li>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+      <xpath>/Defs/ScenarioDef[defName="VQE_NewVault"]</xpath>
+      <value>
+        <li Class="ProgressionScenarios.ScenarioExtension">
+          <iconPath>ScenarioIcons/SealedVault</iconPath>
+        </li>
+      </value>
+    </Operation>
+
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ScenarioDef[defName="VQE_NewVault"]/scenario/summary</xpath>
         <value>
@@ -19,6 +47,12 @@
   <ScenarioDef ParentName="ScenarioBase">
     <defName>Ferny_TribalVault</defName>
     <label>Locked Out</label>
+    <modExtensions>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/LockedOut</iconPath>
+				<displayOrder>3</displayOrder>
+			</li>
+    </modExtensions>
     <description>Your tribe awakes to a pounding headache, as if a distant satellite had directed waves at you in your rest. You glance at what you once though to be a distant mountain, though now you can almost see through it. A mysterious room, hidden in a near impenetrable chamber. It calls us with pounding waves throughout our bodies. Will it let us ascend into this planet faster than we could have imagined, or remind us of our fragile and immature state?</description>
     <scenario>
       <summary>A small group of wild men locked outside of an ancient vault. Very challenging.</summary>

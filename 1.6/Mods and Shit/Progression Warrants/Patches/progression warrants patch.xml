@@ -3,6 +3,14 @@
 
 <!-- Spacer -->
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ScenarioDef[defName="Ferny_BountyHunter"]</xpath>
+		<value>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/BountyHunter</iconPath>
+			</li>
+		</value>
+	</Operation>
 
                 <Operation Class="PatchOperationConditional">
                 <success>Always</success>

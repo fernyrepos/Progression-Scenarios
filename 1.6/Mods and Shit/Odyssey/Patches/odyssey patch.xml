@@ -14,6 +14,21 @@
         </value>
     </Operation>
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ScenarioDef[defName="TheGravship"]</xpath>
+		<value>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/OrbitalChase</iconPath>
+				<displayOrder>10</displayOrder>
+			</li>
+		</value>
+	</Operation>
+
+
+
+
+
+
     <Operation Class="PatchOperationConditional">
     <success>Always</success>
         <xpath>/Defs/ResearchProjectDef[defName="Fishing"]/tags</xpath>

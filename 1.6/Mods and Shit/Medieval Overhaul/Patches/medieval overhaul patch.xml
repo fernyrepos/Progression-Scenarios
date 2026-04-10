@@ -3,7 +3,23 @@
 
 
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ScenarioDef[defName="DankPyon_LoneWolfStart"]</xpath>
+		<value>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/LoneWolf</iconPath>
+			</li>
+		</value>
+	</Operation>
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ScenarioDef[defName="DankPyon_MercenaryStart"]</xpath>
+		<value>
+			<li Class="ProgressionScenarios.ScenarioExtension">
+				<iconPath>ScenarioIcons/BattleBrothers</iconPath>
+			</li>
+		</value>
+	</Operation>
 
 <!-- Raw wood in True Start -->
 
